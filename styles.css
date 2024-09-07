@@ -1,0 +1,367 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root{
+	--Beige: #eeede9;
+	--Cocoa: #777775;
+	--bs-border-radius: 0;
+}
+*{
+	font-family: 'Roboto Serif', serif;
+	scroll-behavior: smooth;
+	text-decoration: none;
+	list-style: none;
+}
+
+/*Header*/
+.Header{
+	display: flex;
+	flex-direction: column;
+	background-image: url('Hero.jpg');
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: rgba(238, 237, 233, 0.5);
+	background-blend-mode: overlay;
+	padding-bottom: 50px;
+}
+.navbar{
+	background-color: white;
+	--bs-navbar-nav-link-padding-x: 1rem;
+}
+.navbar-brand{
+	color: black;
+	font-size: 1.4rem;
+	font-weight: 500;
+	padding-left: 20px;
+}
+.navbar-brand:hover{
+	color: var(--Cocoa);
+	transition: 0.8s ease;
+}
+.navbar-nav{
+	margin-left: auto;
+	padding-right: 20px;
+}
+.nav-link{
+	color: black;
+}
+.nav-link:hover, .navbar-nav .nav-link.active{
+	color: var(--Cocoa);
+	transition: 0.8s ease;
+} 
+
+.signup-link{
+	padding-left: 10px;
+}
+
+/*Hero*/
+.Hero{
+	margin: auto;
+	padding-bottom: 150px;
+	text-align: center;
+}
+.Hero p{
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	padding-bottom: 20px;
+}
+
+/*About*/
+.about{
+	padding: 50px 0;
+}
+.about-content{
+	margin: auto;
+	text-align: center;
+}
+.about-content p{
+	margin-top: 50px;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: black;
+	padding-bottom: 25px;
+}
+.nav{
+	--bs-nav-link-padding-x: 2rem;
+}
+
+/*Shop*/
+.shop{
+	padding: 50px 0;
+}
+.shop .card-group{
+	border: 0;
+	border-radius: 0;
+}
+.shop .card-group .card{
+	border: 0;
+	border-radius: 0;
+	background-color: var(--Beige);
+}
+.card-txt .card-body{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	padding: 50px;
+}
+
+/*Blog*/
+.blog{
+	display: flex;
+	flex-direction: column;
+	padding: 50px 0;
+}
+.blog h3 {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 400;
+	color: black;
+	padding-bottom: 20px;
+}
+.blog-cards .card-text{
+	font-size: 0.9rem;
+}
+.blog-cards .card-link{
+	text-align: right;
+}
+.blog-cards .card-link a{
+	font-size: 0.9rem;
+	color: var(--Cocoa);
+}
+.blog-cards .card-link a:hover{
+	color: black;
+	transition: 0.8s ease;
+}
+.blog-cards .card-footer{
+	background-color: var(--Beige);
+}
+
+/*Services*/
+.services{
+	display: flex;
+	flex-direction: column;
+	padding: 50px 0;
+}
+.services h3{
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 400;
+	color: black;
+	padding: 20px 0;
+	background-color: var(--Beige);
+}
+.services-cards .card{
+	padding: 10px;
+	border: none;
+}
+.services-cards .card-body{
+	text-align: center;
+}
+.services-cards .card-body a{
+	font-size: 1.4rem;
+	color: black;
+	text-decoration: none;
+}
+.services-cards .card-body a:hover{
+	color: var(--Cocoa);
+	transition: 0.8s ease;
+}
+.services-cards .card-body p{
+	font-size: 0.9rem;
+	padding-top: 10px;
+}
+
+/*Contact Us*/
+.contact{
+	padding: 50px 0 0 0 ;
+}
+.contact-cards{
+	background-color: var(--Beige);
+}
+.contact-cards .card{
+	width: 22%;
+	border: none;
+	background-color: var(--Beige);
+	padding: 10px;
+}
+.footer-logo{
+	text-align: center;
+}
+.footer-logo a{
+	color: black;
+	text-decoration: none;
+	font-size: 2rem;
+}
+.footer-logo a:hover{
+	color: var(--Cocoa);
+	transition: 0.8s ease;
+}
+.footer-logo p{
+	font-size: 0.7rem;
+	text-align: center;
+}
+
+.contact-cards h3{
+	font-size: 1.4rem;
+	padding-top: 10px;
+}
+.footer-links{
+	display: flex;
+	flex-direction: column;
+}
+.footer-links .card-link{
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: black;
+	text-decoration: none;
+	margin: 0;
+}
+.footer-links .card-link:hover{
+	color: var(--Cocoa);
+	transition: 0.8s ease;
+}
+
+footer{
+	background-color: var(--Beige);
+	font-size: 0.7rem;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+/*Media*/
+@media screen and (max-width: 1400px){
+	.shop .card-title{
+		font-size: 1rem;
+		font-weight: 500;
+	}
+	.shop .card-text{
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 990px){
+	.navbar-collapse{
+		display: flex;
+	}
+	.navbar-nav{
+		 margin: auto;
+		 display: flex;
+		 flex-direction: row;
+		 gap: 30px;
+		 padding-right: 0;
+	}
+	.about-content p{
+		font-size: 1rem;
+	}
+	.card-txt .card-body{
+		padding: 25px;
+	}
+	.contact-cards h3{
+		font-size: 1.1rem;
+	}
+	.blog-cards .card-body{
+		text-align: center;
+	}
+	.blog-cards .card-link{
+		text-align: center;
+	}
+	.contact-cards{
+		display: flex;
+		flex-direction: column;
+	}
+	.contact-cards .card{
+		width: 100%;
+	}
+	.contact-menus .card-body{
+		text-align: center;
+	}
+	.footer-links{
+		justify-content: center;
+		flex-direction: row;
+		gap: 30px;
+	}
+	.contact-form h3{
+		text-align: center;
+	}
+	.form-control{
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.card-txt .card-body{
+		padding: 15px;
+	}
+	.shop .card-title{
+		font-size: 0.8rem;
+		font-weight: 500;
+	}
+	.shop .card-text{
+		font-size: 0.6rem;
+	}
+	.blog-cards .card-title{
+		font-size: 1rem;
+		font-weight: 500;
+	}
+	.blog-cards .card-text{
+		font-size: 0.8rem;
+	}
+	.services-cards .card-body a{
+		font-size: 1rem;
+		font-weight: 500;
+	}
+	.services-cards .card-body p{
+		font-size: 0.8rem;
+	}
+
+}
+@media screen and (max-width: 576px){
+	.navbar-nav{
+		font-size: 0.8rem;
+		gap: 25px;
+	}
+	.shop button{
+		padding: 0.25rem 0.5rem;
+		font-size: 0.7rem;
+	}
+	.shop .card-body{
+		padding: 5px;
+	}
+	.shop .card-title{
+		font-size: 0.7rem;
+		font-weight: 500;
+	}
+	.shop .card-text{
+		font-size: 0.5rem;
+	}
+	.services-cards{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.footer-links .card-link{
+		font-size: 0.7rem;
+	}
+}
+@media screen and (max-width: 480px){
+	.navbar-brand{
+		font-size: 1.1rem;
+		padding-left: 10px;
+	}
+	.navbar-nav{
+		font-size: 0.6rem;
+		gap: 15px;
+	}
+}
+@media screen and (max-width: 360px){
+	.navbar-brand{
+		padding-left: 10px;
+	}
+	.navbar-nav{
+		gap: 15px;
+	}
+	.footer-links .card-link{
+		font-size: 0.6rem;
+	}
+}
